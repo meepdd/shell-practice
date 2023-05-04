@@ -1,8 +1,8 @@
 #!/bin/bash
 
-file1="student1.txt"
-file2="student2.txt"
-file3="student3.txt"
+file1="1.txt"
+file2="2.txt"
+file3="3.txt"
 
 # Получаем количество строк в каждом файле
 count1=$(cat $path$file1 | wc -l)
