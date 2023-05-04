@@ -12,7 +12,7 @@ count3=$(cat $path$file3 | wc -l)
 # Проверяем, что количество строк в каждом файле равно
 if [ $count1 -eq $count2 ] && [ $count2 -eq $count3 ]
 then
-  echo "Количество строк в файлах $file1, $file2, $file3 совпадает"
+  echo "YES"
 else
-  echo "Количество строк в файлах $file1, $file2, $file3 не совпадает"
+  echo "NO"
 fi
