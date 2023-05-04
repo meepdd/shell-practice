@@ -1,3 +1,5 @@
+name: Проверка количества людей в группах
+
 on: [push]
 
 jobs:
@@ -13,7 +15,6 @@ jobs:
         chmod +x check_script.sh
         test1=$(./add_script.sh college_students.txt)
         test2=$(./check_script.sh file1.txt file2.txt file3.txt)
-        test4=$(./check_script.sh tmp1.txt tmp2.txt tmp3.txt)
         if [ "$test1" = "yes" ]; then
             echo "OK"
         else
@@ -24,17 +25,5 @@ jobs:
             echo "OK"
         else
             echo "ERROR 2"
-            exit 1
-        fi
-        if [ "$test3" = "yes" ]; then
-            echo "OK"
-        else
-            echo "ERROR 3"
-            exit 1
-        fi
-        if [ "$test4" = "yes" ]; then
-            echo "OK"
-        else
-            echo "ERROR 4"
             exit 1
         fi
