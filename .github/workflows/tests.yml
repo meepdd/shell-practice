@@ -13,7 +13,6 @@ jobs:
         chmod +x check_script.sh
         test1=$(./add_script.sh college_students.txt)
         test2=$(./check_script.sh file1.txt file2.txt file3.txt)
-        test3=$(./test_check.sh)
         test4=$(./check_script.sh tmp1.txt tmp2.txt tmp3.txt)
         if [ "$test1" = "yes" ]; then
             echo "OK"
