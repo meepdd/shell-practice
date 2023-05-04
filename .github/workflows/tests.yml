@@ -15,4 +15,6 @@ jobs:
         chmod +x check_script.sh
         ./add_script.sh college_students.txt
         ./check_script.sh file1.txt file2.txt file3.txt
+        ./test_check.sh
+        ./check_script.sh tmp1.txt tmp2.txt tmp3.txt
 
