@@ -1,5 +1,3 @@
-name: Проверка количества людей в группах
-
 on: [push]
 
 jobs:
@@ -21,15 +19,23 @@ jobs:
             echo "OK"
         else
             echo "ERROR 1"
+            exit 1
+        fi
         if [ "$test2" = "yes" ]; then
             echo "OK"
         else
             echo "ERROR 2"
+            exit 1
+        fi
         if [ "$test3" = "yes" ]; then
             echo "OK"
         else
             echo "ERROR 3"
+            exit 1
+        fi
         if [ "$test4" = "yes" ]; then
             echo "OK"
         else
             echo "ERROR 4"
+            exit 1
+        fi
