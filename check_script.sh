@@ -1,3 +1,5 @@
+#!/bin/bash
+
 file1="student1.txt"
 file2="student2.txt"
 file3="student3.txt"
