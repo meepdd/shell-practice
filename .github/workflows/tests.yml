@@ -1,0 +1,15 @@
+name: Проверка количества людей в группах
+
+on: [push]
+
+jobs:
+  test-bash-script:
+    runs-on: ubuntu-latest
+    name: Тест скрипта на Ubuntu
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Bash script test
+      run: |
+       chmod +x check_script.sh
+        ./check_script.sh file1.txt file2.txt file3.txt
