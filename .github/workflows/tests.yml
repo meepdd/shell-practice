@@ -11,10 +11,25 @@ jobs:
       uses: actions/checkout@v2
     - name: Bash script test
       run: |
-       chmod +x add_script.sh
+        chmod +x add_script.sh
         chmod +x check_script.sh
-        ./add_script.sh college_students.txt
-        ./check_script.sh file1.txt file2.txt file3.txt
-        ./test_check.sh
-        ./check_script.sh tmp1.txt tmp2.txt tmp3.txt
-
+        test1=$(./add_script.sh college_students.txt)
+        test2=$(./check_script.sh file1.txt file2.txt file3.txt)
+        test3=$(./test_check.sh)
+        test4=$(./check_script.sh tmp1.txt tmp2.txt tmp3.txt)
+        if [ "$test1" = "yes" ]; then
+            echo "OK"
+        else
+            echo "ERROR 1"
+        if [ "$test2" = "yes" ]; then
+            echo "OK"
+        else
+            echo "ERROR 2"
+        if [ "$test3" = "yes" ]; then
+            echo "OK"
+        else
+            echo "ERROR 3"
+        if [ "$test4" = "yes" ]; then
+            echo "OK"
+        else
+            echo "ERROR 4"
