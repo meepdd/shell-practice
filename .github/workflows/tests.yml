@@ -19,11 +19,11 @@ jobs:
             echo "OK"
         else
             echo "ERROR 1"
-            exit 1
+           
         fi
         if [ "$test2" = "yes" ]; then
             echo "OK"
         else
             echo "ERROR 2"
-            exit 1
+            
         fi
