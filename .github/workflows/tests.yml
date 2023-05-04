@@ -13,6 +13,6 @@ jobs:
       run: |
        chmod +x add_script.sh
         chmod +x check_script.sh
-        ./add_script.sh college_students.txt
-        ./check_script.sh file1.txt file2.txt file3.txt
+        ../../add_script.sh college_students.txt
+        ../../check_script.sh file1.txt file2.txt file3.txt
 
