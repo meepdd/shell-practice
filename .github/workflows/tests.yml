@@ -29,3 +29,21 @@ jobs:
         chmod +x group_comparison.sh
         ./transmission_error.sh
         ./group_comparison.sh group1.txt
+    - name: Проверка файлa со списком фамилий студентов, в котором есть дубликаты
+      run: |
+        chmod +x duplicates.sh
+        chmod +x identical_students.sh
+        ./duplicates.sh
+        ./identical_students.sh names.txt
+    - name: Проверка файлa со списком фамилий студентов, в котором нет дубликатов
+      run: |
+        chmod +x different.sh
+        chmod +x identical_students.sh
+        ./different.sh
+        ./identical_students.sh names.txt
+    - name: Проверка файлa со списком фамилий студентов, к которому у пользователя нет прав на чтение
+      run: |
+        chmod +x no_permission.sh
+        chmod +x identical_students.sh
+        ./no_permission.sh
+        ./identical_students.sh names.txt
