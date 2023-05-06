@@ -9,7 +9,4 @@ echo "Smith
 Johnson
 Williams" > group2.txt
 
-# Запускаем скрипт
-./script.sh group1.txt group2.txt
-
 # Ожидаемый вывод: "В обоих группах 3 человек"
