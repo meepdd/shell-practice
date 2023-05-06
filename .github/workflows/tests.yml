@@ -17,3 +17,15 @@ jobs:
       run: |
         chmod +x identical_students.sh
         ./identical_students.sh college_students.txt
+    - name: Проверка равного количества студентов в файлах
+      run: |
+        chmod +x equal_amount.sh
+        chmod +x group_comparison.sh
+        ./equal_amount.sh
+        ./group_comparison.sh group1.txt group2.txt
+    - name: Проверка отсутствия одного txt файла
+      run: |
+        chmod +x transmission_error.sh
+        chmod +x group_comparison.sh
+        ./transmission_error.sh
+        ./group_comparison.sh group1.txt
