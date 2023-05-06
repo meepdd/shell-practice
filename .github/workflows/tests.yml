@@ -13,3 +13,7 @@ jobs:
       run: |
         chmod +x check_script1.sh
         ./check_script1.sh 1.txt 2.txt
+    - name: Проверка работоспособности скрипта №2
+      run: |
+        chmod +x identical_students.sh
+        ./identical_students.sh
