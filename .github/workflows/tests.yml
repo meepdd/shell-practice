@@ -12,4 +12,4 @@ jobs:
     - name: Проверка работоспособности скрипта №1
       run: |
         chmod +x check_script1.sh
-        ./check_script1.sh
+        ./check_script1.sh 1.txt 2.txt
