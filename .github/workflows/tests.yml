@@ -9,21 +9,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Bash script test
+    - name: Проверка работоспособности скрипта №1
       run: |
-        chmod +x add_script.sh
-        chmod +x check_script.sh
-        test1=$(./add_script.sh college_students.txt)
-        test2=$(./check_script.sh file1.txt file2.txt file3.txt)
-        if [ "$test1" = "yes" ]; then
-            echo "OK"
-        else
-            echo "ERROR 1"
-           
-        fi
-        if [ "$test2" = "yes" ]; then
-            echo "OK"
-        else
-            echo "ERROR 2"
-            
-        fi
+        chmod +x check_script1.sh
+        ./check_script1.sh
