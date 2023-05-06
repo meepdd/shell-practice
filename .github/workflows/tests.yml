@@ -16,4 +16,4 @@ jobs:
     - name: Проверка работоспособности скрипта №2
       run: |
         chmod +x identical_students.sh
-        ./identical_students.sh
+        ./identical_students.sh college_students.txt
